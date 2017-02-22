@@ -1,0 +1,39 @@
+package practice;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.DataProvider;
+
+public class DataProviders {
+  @Test(dataProvider = "dp")
+  public void f(Integer n, String s) {
+  }
+
+  @DataProvider
+  public Object[][] dp() {
+    return new Object[][] {
+      new Object[] { 1, "a" },
+      new Object[] { 2, "b" },
+    };
+  }
+}
+
+
+
+public class DataProviders {
+	
+	// Create a method which provides an Array of object 
+	@DataProvider
+	public static Object[][] usercredentials() { 
+		return new Object[][] {
+			{"UID1", "PWD1"},
+			{"UID2", "PWD2"},
+		};
+		}
+	}
+	//Create a test which consumes th Data provided by an object Array 
+@Test(dataprovider = "usercredentials")
+public void LoginTest(String Userid, String Password) { 
+	  System.out.printf("This is User Id : " + Userid + "\n");
+	  System.out.printf("This is password : " + Password+ "\n");
+	
+}

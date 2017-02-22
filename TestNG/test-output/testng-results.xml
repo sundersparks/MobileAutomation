@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="711" started-at="2017-02-22T21:02:08Z" finished-at="2017-02-22T21:02:09Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="711" started-at="2017-02-22T21:02:08Z" finished-at="2017-02-22T21:02:09Z">
+      <class name="practice.DataproviderwithExcel">
+        <test-method status="PASS" signature="usercredentials(java.lang.String, java.lang.String)[pri:0, instance:practice.DataproviderwithExcel@2ef5e5e3]" name="usercredentials" duration-ms="10" started-at="2017-02-22T16:02:09Z" data-provider="usercredentials" finished-at="2017-02-22T16:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassWord1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercredentials -->
+        <test-method status="PASS" signature="usercredentials(java.lang.String, java.lang.String)[pri:0, instance:practice.DataproviderwithExcel@2ef5e5e3]" name="usercredentials" duration-ms="3" started-at="2017-02-22T16:02:09Z" data-provider="usercredentials" finished-at="2017-02-22T16:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassWord2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercredentials -->
+        <test-method status="PASS" signature="usercredentials(java.lang.String, java.lang.String)[pri:0, instance:practice.DataproviderwithExcel@2ef5e5e3]" name="usercredentials" duration-ms="3" started-at="2017-02-22T16:02:09Z" data-provider="usercredentials" finished-at="2017-02-22T16:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassWord3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercredentials -->
+        <test-method status="PASS" signature="usercredentials(java.lang.String, java.lang.String)[pri:0, instance:practice.DataproviderwithExcel@2ef5e5e3]" name="usercredentials" duration-ms="3" started-at="2017-02-22T16:02:09Z" data-provider="usercredentials" finished-at="2017-02-22T16:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassWord4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercredentials -->
+        <test-method status="PASS" signature="usercredentials(java.lang.String, java.lang.String)[pri:0, instance:practice.DataproviderwithExcel@2ef5e5e3]" name="usercredentials" duration-ms="1" started-at="2017-02-22T16:02:09Z" data-provider="usercredentials" finished-at="2017-02-22T16:02:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Testuser5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testPassWord5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercredentials -->
+      </class> <!-- practice.DataproviderwithExcel -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

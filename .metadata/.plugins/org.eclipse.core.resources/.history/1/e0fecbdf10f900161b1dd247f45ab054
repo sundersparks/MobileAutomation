@@ -1,0 +1,9 @@
+package practice;
+
+import org.testng.annotations.Test;
+//Import Apache POI 
+public class DataproviderwithExcel {
+  @Test
+  public void f() {
+  }
+}

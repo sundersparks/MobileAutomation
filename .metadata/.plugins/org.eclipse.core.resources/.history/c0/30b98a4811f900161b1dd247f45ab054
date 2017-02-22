@@ -1,0 +1,18 @@
+package practice;
+
+import org.testng.annotations.Test;
+//Import Apache POI 
+/*
+1.Test case Function 
+2.Create Test Data 
+3.Create a function to Open & Read excel 
+4.Execute the test 
+*/
+public class DataproviderwithExcel {
+  @Test
+  public void Testfunction() {
+	  
+	  System.out.printf("This is User Id : " + Userid + "\n");
+	  System.out.printf("This is password : " + Password+ "\n");
+  }
+}

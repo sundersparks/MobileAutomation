@@ -1,0 +1,17 @@
+package practice;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class practice {
+	
+  @Test
+  @practice({"uid", "pwd"})
+  public void login(String uid, String pwd) {
+	  
+	  System.out.printf("This is User Id : " + uid + "\n");
+	  System.out.printf("This is password : " + pwd+ "\n");
+	  
+	 	  
+  }
+}
