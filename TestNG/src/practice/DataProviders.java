@@ -11,8 +11,7 @@ public class DataProviders {
 		return new Object[][] {
 			{"UID1", "PWD1"},
 			{"UID2", "PWD2"},
-		};
-		
+			};
 		}
 	
 //Create a test which consumes the Data provided by an object Array 
