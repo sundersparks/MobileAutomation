@@ -7,7 +7,7 @@ public class DataproviderwithExcel {
 	// Read the Excel by calling ExcelUtils class and Return the Test Object array 
 	@DataProvider
 	public static Object[][] usercredentials() throws Exception {
-		Object[][] Testobjectarry = ExcelUtils.getTableArray("C:\\CMS\\Automation\\TestData.xlsx", "Sheet1");
+		Object[][] Testobjectarry = ExcelUtils.getTableArray("/Users/kayal/Project/TestData.uids.xlsx", null);
 		return (Testobjectarry);
 		}
 	
