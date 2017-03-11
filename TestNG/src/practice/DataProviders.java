@@ -19,7 +19,7 @@ public class DataProviders {
 @Test(dataProvider = "usercredentials")
 public void LoginTest(String Userid, String Password) { 
 	  System.out.println("This update for git");
-	  System.out.printf("This is User Id xxxxxxxxxxxxxxxxs: " + Userid + "\n");
+	  System.out.printf("This is User Id : " + Userid + "\n");
 	  System.out.printf("This is password : " + Password+ "\n");
 	  System.out.println("This update for git");
 }
