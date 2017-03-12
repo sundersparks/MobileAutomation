@@ -7,10 +7,9 @@ import java.io.FileInputStream;
 //getCellData
 
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
+//import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelUtilis {
@@ -18,7 +17,7 @@ public class ExcelUtilis {
 	private static XSSFSheet ExcelWSheet;
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFCell Cell;
-	private static XSSFRow Row;
+	//private static XSSFRow Row;
 
 public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {   
    String[][] tabArray = null;
@@ -58,6 +57,7 @@ public static Object[][] getTableArray(String FilePath, String SheetName) throws
 public static String getCellData(int RowNum, int ColNum) throws Exception {
 	try{
 		Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+		@SuppressWarnings("deprecation")
 		int dataType = Cell.getCellType();
 		if  (dataType == 3) {
 			return "";
