@@ -1,35 +1,34 @@
 package testng;
 
-import java.io.FileInputStream;
-
 //getTableArray
 //getCellData
 //getCellData
 
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 //import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-public class ExcelUtilis {
 
-	private static XSSFSheet ExcelWSheet;
-	private static XSSFWorkbook ExcelWBook;
+public class ExcelUtilis {
+	private static XSSFSheet ESheet;
+	private static XSSFWorkbook EWorkbook;
 	private static XSSFCell Cell;
 	//private static XSSFRow Row;
 
 public static Object[][] getTableArray(String FilePath, String SheetName) throws Exception {   
    String[][] tabArray = null;
    try {
-	   FileInputStream ExcelFile = new FileInputStream("/Users/kayal/Project/TestData/uids.xlsx");
+	   FileInputStream Efile = new FileInputStream("/Users/kayal/Project/TestData/uids.xlsx");
 	   // Access the required test data sheet
-	   ExcelWBook = new XSSFWorkbook(ExcelFile);
-	   ExcelWSheet = ExcelWBook.getSheet(SheetName);
+	   EWorkbook = new XSSFWorkbook(Efile);
+	   ESheet = EWorkbook.getSheet(SheetName);
 	   int startRow = 1;
 	   int startCol = 1;
 	   int ci,cj;
-	   int totalRows = ExcelWSheet.getLastRowNum();
+	   int totalRows = ESheet.getLastRowNum();
 	   // you can write a function as well to get Column count
 	   int totalCols = 2;
 	   tabArray=new String[totalRows][totalCols];
@@ -56,7 +55,7 @@ public static Object[][] getTableArray(String FilePath, String SheetName) throws
 
 public static String getCellData(int RowNum, int ColNum) throws Exception {
 	try{
-		Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+		Cell = ESheet.getRow(RowNum).getCell(ColNum);
 		@SuppressWarnings("deprecation")
 		int dataType = Cell.getCellType();
 		if  (dataType == 3) {
