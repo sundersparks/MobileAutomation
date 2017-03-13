@@ -1,4 +1,4 @@
-package practice;
+package testng;
 
 //Hierarchy of TestNG Annotation -> SUITE -> TEST -> CLASS -> METHOD -> TEST
 //@BeforeMethod & @AfterMethod is executed Before and After Every Method 
