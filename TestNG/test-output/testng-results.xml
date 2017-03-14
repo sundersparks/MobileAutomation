@@ -1,45 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="86" started-at="2017-03-11T21:08:32Z" finished-at="2017-03-11T21:08:32Z">
+  <suite name="Default suite" duration-ms="50" started-at="2017-03-12T03:36:09Z" finished-at="2017-03-12T03:36:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="86" started-at="2017-03-11T21:08:32Z" finished-at="2017-03-11T21:08:32Z">
-      <class name="practice.DataProviders">
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:practice.DataProviders@6a024a67]" name="LoginTest" duration-ms="16" started-at="2017-03-11T16:08:32Z" data-provider="usercredentials" finished-at="2017-03-11T16:08:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UID1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PWD1]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="50" started-at="2017-03-12T03:36:09Z" finished-at="2017-03-12T03:36:09Z">
+      <class name="testng.Parameters1">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:testng.Parameters1@56f4468b]" name="login" duration-ms="0" started-at="2017-03-11T22:36:09Z" finished-at="2017-03-11T22:36:09Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'uid' is required by @Test on method login but has not been marked @Optional or defined
+in /private/var/folders/ql/rsyctqln5r3dpdt_0swnmqlc0000gn/T/testng-eclipse-284269584/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'uid' is required by @Test on method login but has not been marked @Optional or defined
+in /private/var/folders/ql/rsyctqln5r3dpdt_0swnmqlc0000gn/T/testng-eclipse-284269584/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:156)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:370)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:495)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1253)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method status="PASS" signature="LoginTest(java.lang.String, java.lang.String)[pri:0, instance:practice.DataProviders@6a024a67]" name="LoginTest" duration-ms="2" started-at="2017-03-11T16:08:32Z" data-provider="usercredentials" finished-at="2017-03-11T16:08:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[UID2]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[PWD2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-      </class> <!-- practice.DataProviders -->
+        </test-method> <!-- login -->
+      </class> <!-- testng.Parameters1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
